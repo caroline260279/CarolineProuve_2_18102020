@@ -1,0 +1,135 @@
+.navigation{
+    grid-template:60px 60px/1fr  130px 90px 100px ;
+    grid-template-areas: 
+    "logo logo logo logo"
+    "a b c d";
+    font-size: 1.5rem;
+}
+.inscription{
+        justify-self: left;
+        grid-area: d;
+}
+.logo{
+        width: 20%;
+        grid-area: logo;
+        font-size: 2rem;
+}
+.ancre_one{
+        justify-self: left;
+        grid-area: b;
+}
+.ancre_two{
+        justify-self: left;
+        grid-area: c;
+}
+nav .ancre_one, nav .ancre_two{
+    border-bottom: none;
+}
+
+.search{
+        max-width: 500px;
+}
+
+@media screen and (min-width:530px) and (max-width:650px){
+    .ifilter{
+            margin-right: 4rem;
+    }
+}
+@media screen and (min-width:650px) and (max-width:770px){
+    .ifilter{
+            margin-right: 8rem;
+    }
+}
+
+.cadre{
+        max-width: 80%;
+        margin: 2% 10% 0 10%;
+    }
+.list_accomodation{
+        height: 250px;
+        width: 45%;
+        margin: 2%;
+        position: relative;
+    }
+.accomodation h1{
+    margin-left: 2rem;
+}
+.h_accomodation{
+        font-size: 1.5rem;
+    }
+.p_accomodation{
+        font-size: 1rem;
+    }
+.star_one, .star_two, .star_three, .star_four, .star_five{
+        position: absolute;
+        bottom: 1rem;
+    }
+.fig_activity{
+        width: 80%;
+        margin-left: 10%;
+    }
+summary{
+    margin-left: 4rem;
+}
+.activity{
+    width: 95%;
+    margin: 2%;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 1fr repeat(4,220px);
+    grid-template-areas: 
+    "z z"
+    "long court_one"
+    "long court_two"
+    "court_three long_two"
+    "court_four long_two";
+}
+.fig_activity{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.h_activity{
+    margin-left: 2rem;
+    grid-area: z;
+}
+
+.a_one{
+    grid-area: long;
+}
+.a_two{
+    grid-area: court_one;
+}
+.a_three{
+    grid-area: court_two;
+}
+.a_four{
+    grid-area: court_three;
+}
+.a_five{
+    grid-area: court_four;
+}
+.a_six{
+    grid-area: long_two;
+}
+.a_one .img_activity,.a_six .img_activity{
+    height: 85%;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 2rem;
+}
+.footer{
+    width:33%;
+}
+.footer h4{
+    font-size: 1.5rem;
+    margin:0;
+    padding:0;
+}
+.footer li{
+    font-size: 1.2rem;
+}
